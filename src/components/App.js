@@ -1,9 +1,9 @@
 import React from "react";
 
-function NavBar() {
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <h1>My Portfolio</h1>
     </nav>
   );
 }
@@ -11,11 +11,13 @@ function NavBar() {
 function Home() {
   return (
     <div id="home">
-      <h1>Home</h1>
+      <h2>Home</h2>
+      <p>Welcome to my portfolio!</p>
     </div>
   );
 }
 
+// Step 2: Creating the About component
 function About() {
   return (
     <div id="about">
@@ -24,12 +26,13 @@ function About() {
   );
 }
 
+// Step 1 & 3: Rendering all components inside App
 function App() {
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <Home />
-      <About />
+      <About /> {/* New About component added */}
     </div>
   );
 }
